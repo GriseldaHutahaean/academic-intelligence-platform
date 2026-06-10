@@ -2,76 +2,113 @@
 
 ## Ringkasan Eksekutif
 
-Analisis data akademik mengidentifikasi tiga faktor utama yang mempengaruhi kesuksesan mahasiswa: **stabilitas finansial**, **konsistensi pembayaran**, dan **karakteristik demografis**. Tingkat dropout signifikan berkorelasi dengan masalah finansial, sementara dukungan beasiswa dan pembayaran tepat waktu meningkatkan tingkat kelulusan.
+Berdasarkan hasil Exploratory Data Analysis (EDA), ditemukan bahwa faktor finansial memiliki hubungan yang paling kuat dengan hasil akademik mahasiswa. Variabel seperti status tunggakan pembayaran (Debtor), kelancaran pembayaran biaya kuliah (Tuition Fees Up To Date), dan status penerima beasiswa (Scholarship Holder) menunjukkan pola yang konsisten terhadap tingkat kelulusan maupun risiko dropout. Selain itu, faktor usia dan gender juga menunjukkan perbedaan karakteristik akademik, meskipun pengaruhnya tidak sekuat faktor finansial.
 
----
+1. Distribusi Status Akademik Mahasiswa
 
-## Temuan Utama
+Analisis menunjukkan bahwa mahasiswa dalam dataset terbagi ke dalam tiga kategori utama, yaitu Graduate, Dropout, dan Enrolled. Distribusi ini memberikan gambaran umum mengenai tingkat keberhasilan dan retensi mahasiswa selama masa studi.
 
-### 1. Status Akademik
-- Proporsi Graduate vs Dropout vs Enrolled menunjukkan kondisi retensi institusi
-- Tingkat dropout yang tinggi memerlukan intervensi komprehensif
+Insight
+Sebagian besar mahasiswa berhasil menyelesaikan studinya hingga lulus.
+Namun, masih terdapat proporsi mahasiswa yang mengalami dropout dan memerlukan perhatian lebih lanjut.
+Tingkat dropout yang ada menunjukkan pentingnya sistem pemantauan dan intervensi dini bagi mahasiswa berisiko.
 
-### 2. Dampak Beasiswa
-- Mahasiswa penerima beasiswa: **↑ tingkat kelulusan**
-- Mahasiswa tanpa beasiswa: **↑ risiko dropout**
-- Beasiswa signifikan untuk motivasi dan stabilitas finansial
+2. Pengaruh Status Beasiswa
 
-### 3. Masalah Finansial (Debtor)
-- Status debtor: **↑ risiko dropout tinggi**
-- Tekanan finansial mengurangi konsentrasi akademis
-- Memerlukan sistem bantuan dan early warning
+Visualisasi menunjukkan bahwa mahasiswa penerima beasiswa memiliki proporsi kelulusan yang lebih tinggi dibandingkan mahasiswa yang tidak menerima beasiswa.
 
-### 4. Pembayaran Biaya Kuliah
-- Pembayaran tepat waktu: **↑ kelulusan**
-- Pembayaran terlambat: **indikator struggling**
-- Indikator komitmen dan stabilitas mahasiswa
+Insight
+Mahasiswa penerima beasiswa cenderung lebih berhasil menyelesaikan studinya.
+Dukungan finansial berpotensi membantu mahasiswa dalam mempertahankan fokus dan keberlanjutan pendidikan.
+Tingkat dropout relatif lebih rendah pada kelompok penerima beasiswa.
+Implikasi
 
-### 5. Usia Pendaftaran
-- Variasi performa antar kelompok usia
-- Kebutuhan dukungan berbeda per kelompok usia
-- Faktor dalam adaptasi akademis dan sosial
+Program beasiswa dapat menjadi salah satu strategi efektif untuk meningkatkan tingkat kelulusan dan mengurangi risiko dropout mahasiswa.
 
-### 6. Perbedaan Gender
-- Terdapat disparitas tingkat kelulusan antar gender
-- Salah satu group memiliki risiko dropout lebih tinggi
-- Memerlukan program dukungan yang inklusif
+3. Pengaruh Status Debtor
 
-### 7. Korelasi Antar Variabel
-- **Indikator Positif**: Beasiswa + pembayaran tepat waktu = ↑ lulus
-- **Indikator Negatif**: Debtor + pembayaran terlambat = ↑ dropout
-- Faktor finansial lebih kuat pengaruhnya vs demografis
+Status debtor menunjukkan pola yang sangat jelas terhadap hasil akademik mahasiswa.
 
----
+Insight
+Mahasiswa yang memiliki tunggakan pembayaran menunjukkan proporsi dropout yang jauh lebih tinggi dibandingkan mahasiswa yang tidak memiliki tunggakan.
+Sebaliknya, mahasiswa tanpa tunggakan pembayaran memiliki tingkat kelulusan yang jauh lebih tinggi.
+Status debtor dapat menjadi indikator awal risiko dropout.
+Implikasi
 
-## Rekomendasi Prioritas
+Data tunggakan pembayaran dapat digunakan sebagai komponen penting dalam sistem Early Warning System untuk mendeteksi mahasiswa yang membutuhkan bantuan lebih awal.
 
-| Prioritas | Aksi | Dampak |
-|-----------|------|--------|
-| **Tinggi** | Sistem early warning berbasis status pembayaran & debtor | Deteksi mahasiswa berisiko dini |
-| **Tinggi** | Perluas program beasiswa & bantuan finansial | ↓ Dropout rate |
-| **Sedang** | Program mentoring & academic support terstruktur | ↑ Retensi akademis |
-| **Sedang** | Skema cicilan pembayaran lebih fleksibel | ↓ Beban finansial |
-| **Rendah** | Program orientasi sesuai kelompok usia | ↑ Adaptasi sosial-akademis |
+4. Pengaruh Kelancaran Pembayaran Biaya Kuliah
 
----
+Analisis menunjukkan hubungan yang sangat kuat antara status pembayaran biaya kuliah dengan hasil akademik mahasiswa.
 
-## Key Insights
+Insight
+Mahasiswa yang selalu memperbarui pembayaran biaya kuliah memiliki tingkat kelulusan yang jauh lebih tinggi.
+Mahasiswa yang tidak membayar tepat waktu menunjukkan proporsi dropout yang lebih besar.
+Kelancaran pembayaran mencerminkan stabilitas finansial mahasiswa selama masa studi.
+Implikasi
 
-1. **Finansial adalah Game Changer**: Status beasiswa & pembayaran adalah prediktor terkuat kesuksesan akademis
-2. **Debtor = Red Flag**: Mahasiswa dengan tunggakan pembayaran berisiko tinggi dropout
-3. **Pendekatan Multifaktor**: Intervensi harus terintegrasi (akademis + finansial + psikologis)
-4. **Data-Driven Action**: Gunakan indikator pembayaran & beasiswa untuk targeting mahasiswa yang membutuhkan bantuan
+Monitoring status pembayaran dapat membantu institusi mengidentifikasi mahasiswa yang berpotensi mengalami kesulitan akademik maupun finansial.
 
----
+5. Pengaruh Usia Saat Masuk Perguruan Tinggi
 
-## Target Outcome
+Analisis usia menunjukkan adanya perbedaan distribusi usia antar kelompok mahasiswa.
 
-Dengan implementasi rekomendasi:
-- **↓ 20-30%** Tingkat dropout dalam 1-2 tahun
-- **↑ 15-25%** Tingkat kelulusan on-time
-- **Sistem early warning** operasional untuk deteksi dini mahasiswa berisiko
+Insight
+Mahasiswa yang mengalami dropout cenderung memiliki usia masuk yang lebih tinggi dibandingkan mahasiswa yang berhasil lulus.
+Mahasiswa yang lulus umumnya memiliki rentang usia yang lebih homogen.
+Usia dapat menjadi salah satu faktor yang berkaitan dengan proses adaptasi akademik dan sosial di lingkungan perguruan tinggi.
+Implikasi
 
----
+Institusi dapat mempertimbangkan pendekatan dukungan yang lebih personal bagi mahasiswa dengan karakteristik usia yang berbeda.
 
-*Dokumentasi ringkas untuk presentasi stakeholder dan pengambilan keputusan strategis.*
+6. Analisis Berdasarkan Gender
+
+Visualisasi menunjukkan adanya perbedaan distribusi hasil akademik antar kelompok gender.
+
+Insight
+Salah satu kelompok gender menunjukkan proporsi kelulusan yang lebih tinggi.
+Kelompok gender lainnya menunjukkan proporsi dropout yang relatif lebih besar.
+Temuan ini menunjukkan bahwa karakteristik gender dapat berkaitan dengan pola keberhasilan akademik mahasiswa.
+Implikasi
+
+Perlu dilakukan analisis lanjutan untuk memahami faktor-faktor yang mendasari perbedaan tersebut sehingga dapat dirancang program dukungan yang lebih tepat sasaran.
+
+7. Analisis Korelasi Variabel
+
+Hasil heatmap menunjukkan adanya hubungan antar beberapa variabel dalam dataset.
+
+Insight
+Faktor finansial menunjukkan hubungan yang lebih jelas dengan hasil akademik dibandingkan faktor demografis.
+Variabel seperti status pembayaran, status debtor, dan status beasiswa memiliki potensi sebagai prediktor penting dalam model machine learning.
+Variabel-variabel tersebut layak diprioritaskan pada tahap pengembangan model prediksi dropout.
+Kesimpulan Utama
+
+Berdasarkan seluruh hasil analisis, ditemukan tiga faktor yang paling berkaitan dengan keberhasilan akademik mahasiswa:
+
+1. Stabilitas Finansial
+
+Mahasiswa yang memiliki kondisi finansial lebih stabil, ditunjukkan melalui status pembayaran yang baik dan tidak memiliki tunggakan, cenderung memiliki tingkat kelulusan yang lebih tinggi.
+
+2. Dukungan Finansial
+
+Penerima beasiswa menunjukkan hasil akademik yang lebih baik dibandingkan mahasiswa non-penerima beasiswa.
+
+3. Karakteristik Demografis
+
+Usia dan gender menunjukkan perbedaan pola akademik, meskipun pengaruhnya tidak sekuat faktor finansial.
+
+Business Recommendation
+
+Berdasarkan hasil analisis, institusi pendidikan dapat mengembangkan Student Early Warning System yang memanfaatkan indikator berikut:
+
+Status Debtor
+Tuition Fees Up To Date
+Scholarship Holder
+Age at Enrollment
+Academic Performance Indicators
+
+Sistem ini dapat membantu kampus mengidentifikasi mahasiswa berisiko dropout lebih awal sehingga intervensi dapat dilakukan sebelum mahasiswa benar-benar meninggalkan studinya.
+
+note 
+- 0: No, 1: Yes
+- 0: Female, 1: Male
