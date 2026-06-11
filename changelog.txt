@@ -1,2 +1,3 @@
 day1 090626: data understanding, eda, insight sementara
 day 2 100626: update insight, buat preprocessing, modelling data on progress
+day 3 110626: modelling, business rec 
